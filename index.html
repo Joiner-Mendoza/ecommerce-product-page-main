@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+</head>
+<body>
+<main class="main">
+
+  
+<header class="header">
+  <div class="header__navigation">
+    <img src="./images/icon-menu.svg" class="header__menu-icon" alt="menu-icon">
+    <img src="./images/logo.svg" class="header__logo" alt="Logo" >
+  
+    <nav class="navbar-destok">
+      <ul class="navbar-destok__ul">
+          <li><a href="">Colection</a></li>
+          <li><a href="">Men</a></li>
+          <li><a href="">Women</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-- start nabvar androip-->
+
+<div class="modal-navbar__background inactive">
+  <nav class="navbar-responsive">
+    <img src="./images/icon-close.svg" class="navbar-responsive__close-icon" alt="close-icon">
+    <ul class="navbar-responsive__ul inactive">
+      
+        <li><a href="">Collection</a></li>
+        <li><a href="">Men</a></li>
+        <li><a href="">Women</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+<!-- end nabvar androip-->
+
+<!-- start nabvar destok-->    
+
+<!-- end nabvar destok-->
+
+  <div class="header__card-container">
+    <div class="header__card">
+     <div class="header__card--notification inactive">0</div>
+     <img src="./images/icon-cart.svg" class="header__card-icon" alt="">
+    </div>
+
+    <img src="./images/image-avatar.png" class="header__card-avatar" alt="">
+  </div>
+
+ </header>
+
+<!-- end header -->
+
+
+
+<!-- start contain -->
+ <section class="content"> 
+    <article class="gallery">
+        <div class="gallery__image-container">
+        </div>
+        <img src="./images/icon-previous.svg" alt="previus" class="gallery__previus">
+        <img src="./images/icon-next.svg" alt="next" class="gallery__next">
+  
+        <div class="gallery__products">
+            <img src="./images/image-product-1.jpg" id="1" class="gallery__product" alt="">
+            <img src="./images/image-product-2.jpg" id="2" class="gallery__product" alt="">
+            <img src="./images/image-product-3.jpg" id="3" class="gallery__product" alt="">
+            <img src="./images/image-product-4.jpg" id="4" class="gallery__product" alt="">
+        </div>
+
+    </article>
+<!-- start details -->
+
+    <article class="details">
+        <h2 class="details__company">SNEAKER COMPANY</h2>
+        <h2 class="details__title">Fall Limited Edition Sneakers</h2>
+        <p class="details__description">These low-profile sneakers qre your perfect casual wear companion.Featuring a durable rubber outer sole,they'll withstand everything the weather can offer </p>
+        <div class="details__prices">
+           
+            <p class="details__now">$125.000 <span class="details__discount">50%</span></p>
+            <p class="details__before">$250.000</p>
+        </div>
+
+<!-- end details -->
+
+<!-- start quantity -->
+
+        <div class="details__product-quantity">
+          <div class="inputs">
+            <img src="./images/icon-minus.svg" class="input__minus" alt="minus">
+            <input type="number" value="0" class="input__number">
+            <img src="./images/icon-plus.svg" class="input__plus" alt="plus">
+          </div>
+
+          <button class="details__button">
+            <img src="./images/icon-cart-white.svg"  class ="cart">
+            add to card</button>
+        </div>
+<!-- end quantity -->
+
+    </article>
+
+ </section>
+<!-- end contain -->
+
+
+ <!-- start card modal -->
+  <div class="card-modal inactive">
+    <p class="card-modal__title">Cart</p>
+    <div class="cart__modal__checkout-container">
+        <div class="cart__modal__detail-container">
+          <img src="./images/image-product-1.jpg" class="card-modal__image-produc" alt="">
+          <div>
+            <p class="card-modal__product"> Autumun Limited Edition Sneakers</p>
+            <p class="card-modal__price"> $125.000 x3 <span>$375.00</span></p>
+          </div>
+          <img src="./images/icon-delete.svg" class="card-modal__delete" alt="delete">
+      
+        </div>
+        <button class="card-modal__checkout">Checkout</button>
+    </div>
+  </div>
+ <!-- end card modal -->
+
+  <!-- start modal destok -->
+
+  <div class="modal-galery__background inactive">    
+  <article class="modal-galery ">
+
+    <div class="modal-galery__image-container  ">
+      <img src="./images/icon-close.svg" class="modal-galery__close " alt="icn-close">
+        <img src="./images/icon-previous.svg" alt="previus" class="modal__previus">
+        <img src="./images/icon-next.svg" alt="next" class="modal__next">
+    </div>
+    <div class="modal-galery__products">
+        <img src="./images/image-product-1.jpg" id="m1" class="modal-galery__product" alt="">
+        <img src="./images/image-product-2.jpg" id="m2" class="modal-galery__product" alt="">
+        <img src="./images/image-product-3.jpg" id="m3" class="modal-galery__product" alt="">
+        <img src="./images/image-product-4.jpg" id="m4" class="modal-galery__product" alt="">
+    </div>
+
+  </article>
+
+  </div>
+
+  <!-- end modal destok -->
+
+</main>
+
+<script src="./index.js"></script>
+</body>
+</html>
